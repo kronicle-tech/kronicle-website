@@ -14,3 +14,5 @@ following systems to supplement the info added to Kronicle manually:
 * Git repos
 * Zipkin
 * SonarQube
+
+[GitHub](https://github.com/kronicle-tech/kronicle){: .btn .btn-green }
