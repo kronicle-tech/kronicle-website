@@ -42,7 +42,7 @@ $ helm install kronicle kronicle/kronicle -n kronicle --create-namespace
 
 ## Kubernetes Ingresses
 
-You will need to create a couple of Kubernetes ingresses to be able to access Kubernetes from outside your Kubernetes
+You will need to create two Kubernetes ingresses to be able to access Kubernetes from outside your Kubernetes
 cluster.  One ingress is needed for Kronicle App and one for Kubernetes Service.
 
 Here is an example Kubernetes manifest for creating the ingresses:
