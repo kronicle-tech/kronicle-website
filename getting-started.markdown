@@ -3,9 +3,20 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+title: Getting Started
+nav_order: 2
+permalink: /getting-started
+has_toc: true
 ---
 
 # Getting Started
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 The easiest way to see Kronicle in action is to try the [Live Demo](https://demo.kronicle.tech).  The Live Demo is real
 instance of Kronicle running on Kubernetes on AWS and it is populated with a mix of real data from the Kronicle Project and 

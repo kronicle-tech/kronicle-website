@@ -2,7 +2,10 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+layout: default
+title: Kronicle
+nav_order: 1
+permalink: /
 ---
 
 # Kronicle
@@ -35,7 +38,7 @@ made up data from the fictional Kronicle Computers online shop.
 
 ## Getting Started
 
-See the [Getting Started](/getting-started) guild for info on installed Kronicle on your own Kubernetes cluster:
+See the Getting Started guide for information on installing Kronicle on your own Kubernetes cluster:
 
 [Getting Started](/getting-started){: .btn .btn-green }
 
