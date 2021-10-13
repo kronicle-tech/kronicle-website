@@ -7,6 +7,7 @@ title: Configuration
 nav_order: 3
 permalink: /configuration
 has_toc: true
+wide: true
 ---
 
 # Configuration
