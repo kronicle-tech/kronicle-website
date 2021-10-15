@@ -4,7 +4,7 @@
 
 layout: default
 title: Configuration
-nav_order: 3
+nav_order: 4
 permalink: /configuration
 has_toc: true
 wide: true
@@ -13,11 +13,13 @@ wide: true
 # Configuration
 {: .no_toc }
 
-## Table of contents
+
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
 
 ## Helm Chart
 
@@ -70,3 +72,8 @@ This table details the environment variables that can be passed into the Docker 
 | OPENAPI_SPEC_SERVERS_{index}_URL | This setting can be used to show a custom `server` entry in the OpenAPI spec served by Kronicle Service on its `/actuator/openapi` service endpoint.  Multiple entries can be configured.  `{index}` should start from zero and be incremented by 1 for each server.  | https://demo-service.kronicle.tech | Optional | N/A |
 | OPENAPI_SPEC_SERVERS_{index}_DESCRIPTION | This setting is paired with the OPENAPI_SPEC_SERVERS_{index}_URL setting.  It controls the description to show for a custom server entry in Kronicle Service's OpenAPI spec.  | The demo instance of Kronicle Service | Optional | N/A |
 
+
+## End of the Guide
+
+This is the end of the getting started guide.  See the [Kronicle Walkthrough](https://youtu.be/xNvoxBmMQdk) video for
+a general overview of Kronicle and the [Live Demo](http://demo.kronicle.tech) for a real running instance of Kronicle.
