@@ -6,18 +6,10 @@ layout: default
 title: Roadmap
 nav_order: 5
 permalink: /roadmap
-has_toc: true
+has_toc: false
 ---
 
 # Roadmap
-{: .no_toc }
-
-
-## Table of Contents
-{: .no_toc .text-delta }
-
-1. TOC
-   {:toc}
 
 
 Here's the short to near term roadmap for Kronicle: 

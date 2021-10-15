@@ -72,6 +72,33 @@ This table details the environment variables that can be passed into the Docker 
 | OPENAPI_SPEC_SERVERS_{index}_URL | This setting can be used to show a custom `server` entry in the OpenAPI spec served by Kronicle Service on its `/actuator/openapi` service endpoint.  Multiple entries can be configured.  `{index}` should start from zero and be incremented by 1 for each server.  | https://demo-service.kronicle.tech | Optional | N/A |
 | OPENAPI_SPEC_SERVERS_{index}_DESCRIPTION | This setting is paired with the OPENAPI_SPEC_SERVERS_{index}_URL setting.  It controls the description to show for a custom server entry in Kronicle Service's OpenAPI spec.  | The demo instance of Kronicle Service | Optional | N/A |
 
+## Granting Access to 2 GitHub Organizations
+
+Here is an example of the environment variables needed to configure Kronicle to load all the Git repos for 2 two
+independent GitHub organizations:
+
+```shell
+REPO_FINDERS_GITHUB_ORGANIZATIONS_0_ACCOUNT_NAME=some-github-organization
+REPO_FINDERS_GITHUB_ORGANIZATIONS_0_PERSONAL_ACCESS_TOKEN_USERNAME=some-github-user
+REPO_FINDERS_GITHUB_ORGANIZATIONS_0_PERSONAL_ACCESS_TOKEN_VALUE=gpp_example123
+
+REPO_FINDERS_GITHUB_ORGANIZATIONS_1_ACCOUNT_NAME=another-github-organization
+REPO_FINDERS_GITHUB_ORGANIZATIONS_1_PERSONAL_ACCESS_TOKEN_USERNAME=another-github-user
+REPO_FINDERS_GITHUB_ORGANIZATIONS_1_PERSONAL_ACCESS_TOKEN_VALUE=gpp_example456
+```
+
+## Granting Access to a GitHub Organization's Repos via a GitHub User Account
+
+Here is an example of the environment variables needed to configure Kronicle to load all Git repos via a `machine` 
+GitHub account.  This approach will grand Kronicle access to all the repos that the user account has been 
+_explicitly_ granted access to.  That includes access granted directly to the user account and access granted via a
+GitHub team.  
+
+```shell
+REPO_FINDERS_GITHUB_PERSONAL_ACCESS_TOKENS_0_USERNAME=some-github-user
+REPO_FINDERS_GITHUB_PERSONAL_ACCESS_TOKENS_0_VALUE=gpp_example123
+```
+
 
 ## End of the Guide
 
