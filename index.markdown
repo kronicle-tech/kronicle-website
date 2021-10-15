@@ -43,6 +43,13 @@ See the Getting Started guide for information on installing Kronicle on your own
 [Getting Started](/getting-started){: .btn .btn-green }
 
 
+## Walkthrough
+
+See the following screencast for a walkthrough of Kronicle's features:
+
+[Kronicle Walkthrough](https://youtu.be/xNvoxBmMQdk){: .btn .btn-green }
+
+
 ## Code
 
 See the following repo for Kronicle's source code:

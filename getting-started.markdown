@@ -12,11 +12,13 @@ has_toc: true
 # Getting Started
 {: .no_toc }
 
-## Table of contents
+
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
 
 The easiest way to see Kronicle in action is to try the [Live Demo](https://demo.kronicle.tech).  The Live Demo is real
 instance of Kronicle running on Kubernetes on AWS and it is populated with a mix of real data from the Kronicle Project and 
@@ -24,10 +26,12 @@ made up data from the fictional Kronicle Computers online shop.
 
 If you would like to install Kronicle on your own Kubernetes cluster, see the following steps.  
 
+
 ## Requirements
 
 1. Have a [kubeconfig](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/) file (default location is ~/.kube/config).
 2. Have [Helm v3 installed](https://helm.sh/docs/intro/install/).  
+
 
 ## Install Kronicle
 
@@ -39,6 +43,7 @@ $ helm repo add kronicle https://charts.kronicle.tech
 $ helm repo update
 $ helm install kronicle kronicle/kronicle -n kronicle --create-namespace
 ```
+
 
 ## Kubernetes Ingresses
 
@@ -101,7 +106,9 @@ spec:
       secretName: kronicle-service-tls
 ```
 
-## Configuration
 
-See the [Configuration](/configuration) guide for information on how to configure Kronicle via environment variables.  
+## Next Section
 
+The next section of the getting started guide is [Metadata Files](/metadata-files).  It provides information on how to 
+create `kronicle.yaml` files to describe the components in an organisation's tech stack and also to describe the areas
+and teams working on and owning those components.
