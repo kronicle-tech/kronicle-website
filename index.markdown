@@ -10,37 +10,35 @@ permalink: /
 
 # Kronicle
 
-Kronicle is an open source tool and dashboard for development teams and tech organizations to document and visualise 
-the components in their tech stack and teams in their organization.  Kronicle automatically gathers data from the
-following systems to supplement the info added to Kronicle manually: 
+Kronicle is an open source platform for development teams and tech organizations to document and visualise 
+a) the components in their tech stack and b) the teams that owns those components.  
 
-* Git repos
-* Zipkin
-* SonarQube
+Kronicle has a heavy focus on automation, it combines: 
+
+1. Human authored YAML files that are committed to the same repos as the code components they describe
+2. Information automatically gathered from places like: package.json and package-lock.json in codebases, Gradle build scripts, Zipkin, AWS X-Ray etc.
 
 
 ## Live Demo
 
 The easiest way to see Kronicle in action is to try the [Live Demo](https://demo.kronicle.tech). This is a real 
-instance of Kronicle running on Kubernetes on AWS and it is populated with a mix of real data from the Kronicle Project 
-together with some from the fictional Kronicle Computers online shop.
+instance of Kronicle running on AWS ECS+Fargate and it is populated with a mix of real data from the Kronicle Project 
+together and example data for the fictional "Kronicle Computers".
 
 [Live Demo](https://demo.kronicle.tech){: .btn .btn-green }
 
 
-## Features
+## Running Kronicle
 
-* Each component in your stack - software or infrastructure - has a `Kronicle.yaml` file added to the component’s own Git repo. This keeps the metadata close to the code, meaning it’s easy for engineers to both keep it up-to-date and to read it. Kronicle automatically discovers the `kronicle.yaml` files in all your repos and reloads the data in them every few minutes.  See https://github.com/kronicle-tech/kronicle/blob/main/kronicle.yaml for an example file. 
-* Kronicle uses software called `Scanners` that search through the data in your `kronicle.yaml` files and then bring together additional data from external sources like your Git repos, traces in [Zipkin](https://zipkin.io), code coverage in SonarQube etc.
-* Using the data loaded from `kronicle.yaml` files and data found by `Scanners`, Kronicle automatically creates a website that visualises all of your components, including all the components per area/team, architectural diagrams, response times per component etc.
-* `kronicle.yaml` files also contain metadata for teams, areas of your organization, component types and platforms. Kronicle visualises this metadata for you, enabling your people to understand not only your tech stack but the teams that work on it as well.
+See [Getting Started][getting-started] for information on running Kronicle locally via docker-compose or deploying it 
+to AWS or an existing Kubernetes cluster.  
 
 
-## Getting Started
+## Plugins
 
-See the Getting Started guide for information on installing Kronicle on your own Kubernetes cluster:
-
-[Getting Started](/getting-started){: .btn .btn-green }
+Kronicle's backend service has a plugin based architecture.  See 
+[https://github.com/kronicle-tech/kronicle/tree/main/service-plugins](https://github.com/kronicle-tech/kronicle/tree/main/service-plugins)
+for a list of those plugins or see [Configuration][configuration] for info on configuring each of Kronicle's plugins
 
 
 ## Walkthrough

@@ -12,10 +12,11 @@ has_toc: false
 # Roadmap
 
 
-Here's the short to near term roadmap for Kronicle: 
+Here's the short term roadmap for Kronicle: 
 
-| # | Roadmap Item | Notes |
-|---|---|---|
-| 1 | Add support for finding Git repos on GitLab | Kronicle already supports GitHub and Bitbucket Service but GitLab is not yet supported.  |
-| 2 | Split the code in [Gradle Scanner](https://github.com/kronicle-tech/kronicle/tree/main/service/src/main/java/tech/kronicle/service/scanners/gradle) into its own independent library | |
-| 3 | Plugin architecture for Java code | Use something like [PF4J](https://github.com/pf4j/pf4j) to add plugin support to Kronicle |
+| #   | Status           | Roadmap Item                                                                                                                                                                         | Notes                                                                                     |
+|-----|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| 1   | Implemented      | Add support for finding Git repos on GitLab                                                                                                                                          | Kronicle already supports GitHub and Bitbucket Service but GitLab is not yet supported.   |
+| 2   | Implemented      | Split the code in [Gradle Scanner](https://github.com/kronicle-tech/kronicle/tree/main/service/src/main/java/tech/kronicle/service/scanners/gradle) into its own independent library |                                                                                           |
+| 3   | Implemented      | Plugin architecture for Java code                                                                                                                                                    | Use something like [PF4J](https://github.com/pf4j/pf4j) to add plugin support to Kronicle |
+| 4   | Work-in-progress | AWS X-Ray plugin                                                                                                                                                                     | Create a plugin to collect component dependencies from AWS X-Ray                          |

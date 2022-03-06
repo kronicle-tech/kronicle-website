@@ -20,91 +20,14 @@ has_toc: true
 {:toc}
 
 
-The easiest way to see Kronicle in action is to try the [Live Demo](https://demo.kronicle.tech).  The Live Demo is real
-instance of Kronicle running on Kubernetes on AWS and it is populated with a mix of real data from the Kronicle Project and 
-made up data from the fictional Kronicle Computers online shop.  
+## Options for trying out Kronicle
 
-If you would like to install Kronicle on your own Kubernetes cluster, see the following steps.  
+There are several ways to try Kronicle: 
 
-
-## Requirements
-
-1. Have a [kubeconfig](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/) file (default location is ~/.kube/config).
-2. Have [Helm v3 installed](https://helm.sh/docs/intro/install/).  
-
-
-## Install Kronicle
-
-The following commands will install Kronicle in a Kubernetes namespace called `kronicle` in your default Kubernetes
-cluster:
-
-```shell
-$ helm repo add kronicle https://charts.kronicle.tech
-$ helm repo update
-$ helm install kronicle kronicle/kronicle -n kronicle --create-namespace
-```
-
-
-## Kubernetes Ingresses
-
-You will need to create two Kubernetes ingresses to be able to access Kubernetes from outside your Kubernetes
-cluster.  One ingress is needed for Kronicle App and one for Kubernetes Service.
-
-Here is an example Kubernetes manifest for creating the ingresses:
-
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: kronicle-app
-  namespace: kronicle
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-spec:
-  rules:
-    - host: demo.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: kronicle-app
-                port:
-                  number: 80
-  tls:
-    - hosts:
-        - demo.example.com
-      secretName: kronicle-app-tls
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: kronicle-service
-  namespace: kronicle
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-spec:
-  rules:
-    - host: demo-service.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: kronicle-service
-                port:
-                  number: 80
-  tls:
-    - hosts:
-        - demo-service.example.com
-      secretName: kronicle-service-tls
-```
+1. The [Live Demo](https://demo.kronicle.tech).  The Live Demo is real instance of Kronicle running on AWS ECS+Fargate and it is populated with a mix of real data from the Kronicle Project and data for the fictional "Kronicle Computers"
+2. Run Kronicle via Docker Compose.  See [https://github.com/kronicle-tech/kronicle-docker-compose](https://github.com/kronicle-tech/kronicle-docker-compose) for information and steps to follow
+3. Deploy Kronicle to AWS ECS+Fargate using AWS CDK.  See [https://github.com/kronicle-tech/kronicle-cdk-config](https://github.com/kronicle-tech/kronicle-cdk-config) for more information
+4. Deploy Kronicle to an existing Kubernetes cluster.  See [Deploying to Kubernetes](deploying-to-kubernetes) for information
 
 
 ## Next Section
