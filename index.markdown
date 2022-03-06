@@ -16,7 +16,7 @@ a) the components in their tech stack and b) the teams that owns those component
 Kronicle has a heavy focus on automation, it combines: 
 
 1. Human authored YAML files that are committed to the same repos as the code components they describe
-2. Information automatically gathered from places like: package.json and package-lock.json in codebases, Gradle build scripts, Zipkin, AWS X-Ray etc.
+2. Information automatically gathered from places like: package.json and package-lock.json files in codebases, Gradle build scripts, Zipkin, AWS X-Ray etc.
 
 
 ## Live Demo
@@ -30,7 +30,7 @@ together and example data for the fictional "Kronicle Computers".
 
 ## Running Kronicle
 
-See [Getting Started][getting-started] for information on running Kronicle locally via docker-compose or deploying it 
+See [Getting Started](getting-started) for information on running Kronicle locally via docker-compose or deploying it 
 to AWS or an existing Kubernetes cluster.  
 
 
@@ -38,7 +38,7 @@ to AWS or an existing Kubernetes cluster.
 
 Kronicle's backend service has a plugin based architecture.  See 
 [https://github.com/kronicle-tech/kronicle/tree/main/service-plugins](https://github.com/kronicle-tech/kronicle/tree/main/service-plugins)
-for a list of those plugins or see [Configuration][configuration] for info on configuring each of Kronicle's plugins
+for a list of those plugins or see [Configuration](configuration) for info on configuring each of Kronicle's plugins
 
 
 ## Walkthrough
