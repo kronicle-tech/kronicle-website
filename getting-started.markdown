@@ -56,4 +56,4 @@ The Kubernetes project provides Helm charts for deploying Kronicle to an existin
 
 ## Next Section
 
-The next section of the getting started guide is [Metadata Files](/metadata-files).  
+The next section of the getting started guide is [Plugins](/plugins).  

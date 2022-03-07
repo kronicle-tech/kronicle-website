@@ -32,15 +32,14 @@ together and example data for the fictional "Kronicle Computers".
 
 ## Running Kronicle
 
-See [Getting Started](getting-started) for information on running Kronicle locally via docker-compose or deploying it 
+See [Getting Started](/getting-started) for information on running Kronicle locally via docker-compose or deploying it 
 to AWS or an existing Kubernetes cluster.  
 
 
 ## Plugins
 
-Kronicle's backend service has a plugin based architecture.  See 
-[https://github.com/kronicle-tech/kronicle/tree/main/service-plugins](https://github.com/kronicle-tech/kronicle/tree/main/service-plugins)
-for a list of those plugins and see [Configuration](configuration) for info on configuring each of Kronicle's plugins
+Kronicle's backend service has a plugin based architecture.  See [Plugins](/plugins)
+for a list of those plugins and see [Configuration](/configuration) for info on configuring each of Kronicle's plugins
 
 
 ## Walkthrough

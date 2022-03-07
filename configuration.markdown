@@ -4,7 +4,7 @@
 
 layout: default
 title: Configuration
-nav_order: 4
+nav_order: 5
 permalink: /configuration
 has_toc: true
 wide: true
@@ -200,7 +200,6 @@ The plugin is configured via these environment variables:
 | PLUGINS_KEY_SOFTWARE_RULES_{index}_NAME                  | This is paired with the SOFTWARE_NAME_PATTERN environment variable.  It configures what name Kronicle should show in Kronicle App when a piece of software matches the associated SOFTWARE_NAME_PATTERN.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Micronaut                    | Optional  |
 
 
-## End of the Guide
+## Next Section
 
-This is the end of the getting started guide.  See the [Kronicle Walkthrough](https://youtu.be/xNvoxBmMQdk) video for
-a general overview of Kronicle and the [Live Demo](http://demo.kronicle.tech) which is a real instance of Kronicle.
+The next section of the getting started guide is [Metadata Files](/metadata-files).

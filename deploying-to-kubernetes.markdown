@@ -4,7 +4,7 @@
 
 layout: default
 title: Deploying to Kubernetes
-nav_order: 6
+nav_order: 7
 permalink: /deploying-to-kubernetes
 has_toc: true
 ---
