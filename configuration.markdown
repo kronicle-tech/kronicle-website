@@ -203,4 +203,4 @@ The plugin is configured via these environment variables:
 ## End of the Guide
 
 This is the end of the getting started guide.  See the [Kronicle Walkthrough](https://youtu.be/xNvoxBmMQdk) video for
-a general overview of Kronicle and the [Live Demo](http://demo.kronicle.tech) for a real running instance of Kronicle.
+a general overview of Kronicle and the [Live Demo](http://demo.kronicle.tech) which is a real instance of Kronicle.

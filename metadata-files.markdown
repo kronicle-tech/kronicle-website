@@ -72,6 +72,4 @@ repo provides a template for creating these sorts of metadata repos.  The templa
 
 ## Next Section
 
-The next section of the getting started guide is [Configuration](/configuration).  It provides information on how to
-configure Kronicle App and Kronicle Service via environment variables.  Some of those environment variables are used
-to enable Kronicle to find and load the `kronicle.yaml` files added to your Git repos.   
+The next section of the getting started guide is [Configuration](/configuration).  

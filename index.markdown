@@ -10,8 +10,10 @@ permalink: /
 
 # Kronicle
 
-Kronicle is an open source platform for development teams and tech organizations to document and visualise 
-a) the components in their tech stack and b) the teams that owns those components.  
+Kronicle is an open source platform for development teams and tech organizations to document and visualise: 
+
+1. The components in their tech stack 
+2. The teams that own those components.  
 
 Kronicle has a heavy focus on automation, it combines: 
 
@@ -38,7 +40,7 @@ to AWS or an existing Kubernetes cluster.
 
 Kronicle's backend service has a plugin based architecture.  See 
 [https://github.com/kronicle-tech/kronicle/tree/main/service-plugins](https://github.com/kronicle-tech/kronicle/tree/main/service-plugins)
-for a list of those plugins or see [Configuration](configuration) for info on configuring each of Kronicle's plugins
+for a list of those plugins and see [Configuration](configuration) for info on configuring each of Kronicle's plugins
 
 
 ## Walkthrough

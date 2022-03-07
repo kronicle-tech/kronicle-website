@@ -22,16 +22,38 @@ has_toc: true
 
 ## Options for trying out Kronicle
 
-There are several ways to try Kronicle: 
+There are several ways to try Kronicle.  See the sections below for details.  
 
-1. The [Live Demo](https://demo.kronicle.tech).  The Live Demo is real instance of Kronicle running on AWS ECS+Fargate and it is populated with a mix of real data from the Kronicle Project and data for the fictional "Kronicle Computers"
-2. Run Kronicle via Docker Compose.  See [https://github.com/kronicle-tech/kronicle-docker-compose](https://github.com/kronicle-tech/kronicle-docker-compose) for information and steps to follow
-3. Deploy Kronicle to AWS ECS+Fargate using AWS CDK.  See [https://github.com/kronicle-tech/kronicle-cdk-config](https://github.com/kronicle-tech/kronicle-cdk-config) for more information
-4. Deploy Kronicle to an existing Kubernetes cluster.  See [Deploying to Kubernetes](deploying-to-kubernetes) for information
+## Live Demo
+
+The [Live Demo](https://demo.kronicle.tech) is a real instance of Kronicle running on AWS ECS+Fargate and 
+it is populated with a mix of real data from the Kronicle Project and data for the fictional "Kronicle Computers".  
+
+The [homepage of the Live Demo](https://demo.kronicle.tech) contains info on some interesting parts of the demo.  
+
+
+## Docker Compose
+
+Run Kronicle via Docker Compose.  The 
+[https://github.com/kronicle-tech/kronicle-docker-compose](https://github.com/kronicle-tech/kronicle-docker-compose) 
+repo contains a 
+[docker-compose.yaml](https://github.com/kronicle-tech/kronicle-docker-compose/blob/main/docker-compose.yaml) file
+that can be used to run Docker locally.  The
+[README.md](https://github.com/kronicle-tech/kronicle-docker-compose/blob/main/README.md) contains more information.  
+
+
+## Deploying to AWS using AWS CDK
+
+The [https://github.com/kronicle-tech/kronicle-cdk-config](https://github.com/kronicle-tech/kronicle-cdk-config) repo
+can be used to deploy Kronicle to an AWS account.  It deploys Kronicle to AWS ECS + AWS Fargate.  If you are familiar
+with AWS CDK, then this repo is an easy way to deploy Kronicle to AWS.
+
+## Kubernetes
+
+The Kubernetes project provides Helm charts for deploying Kronicle to an existing Kubernetes cluster.  See 
+[Deploying to Kubernetes](deploying-to-kubernetes) for more information.  
 
 
 ## Next Section
 
-The next section of the getting started guide is [Metadata Files](/metadata-files).  It provides information on how to 
-create `kronicle.yaml` files to describe the components in an organisation's tech stack and also to describe the areas
-and teams working on and owning those components.
+The next section of the getting started guide is [Metadata Files](/metadata-files).  

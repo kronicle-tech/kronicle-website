@@ -102,6 +102,4 @@ spec:
 
 ## Next Section
 
-The next section of the getting started guide is [Metadata Files](/metadata-files).  It provides information on how to 
-create `kronicle.yaml` files to describe the components in an organisation's tech stack and also to describe the areas
-and teams working on and owning those components.
+The next section of the getting started guide is [Metadata Files](/metadata-files).
