@@ -4,7 +4,7 @@
 
 layout: default
 title: Metadata Files
-nav_order: 3
+nav_order: 4
 permalink: /metadata-files
 has_toc: true
 ---
@@ -70,6 +70,7 @@ repo provides a template for creating these sorts of metadata repos.  The templa
 | [gradle/kronicle-metadata.gradle](https://github.com/kronicle-tech/kronicle-metadata-repo-template/blob/main/gradle/kronicle-metadata.gradle) | A Gradle include file that's used by the build.gradle file to perform the validation of the `kronicle.yaml` file.                                                                                                                                                       | 
 
 
-## Next Section
+## End of the Guide
 
-The next section of the getting started guide is [Configuration](/configuration).  
+This is the end of the getting started guide.  See the [Kronicle Walkthrough](https://youtu.be/xNvoxBmMQdk) video for
+a general overview of Kronicle and the [Live Demo](http://demo.kronicle.tech) which is a real instance of Kronicle.
