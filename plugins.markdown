@@ -20,8 +20,6 @@ has_toc: true
 {:toc}
 
 
-## Kronicle Plugins
-
 The following plugins are available for Kronicle and come bundled in the Docker image for Kronicle's backend service:
 
 
