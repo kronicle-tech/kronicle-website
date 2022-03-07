@@ -27,7 +27,7 @@ The easiest way to see Kronicle in action is to try the [Live Demo](https://demo
 instance of Kronicle running on AWS ECS+Fargate and it is populated with a mix of real data from the Kronicle Project 
 together and example data for the fictional "Kronicle Computers".
 
-[Live Demo](https://demo.kronicle.tech){: .btn .btn-green }
+[Live Demo](https://demo.kronicle.tech){: .btn .btn-blue }
 
 
 ## Running Kronicle
@@ -42,15 +42,15 @@ Kronicle's backend service has a plugin based architecture.  See [Plugins](/plug
 for a list of those plugins and see [Configuration](/configuration) for info on configuring each of Kronicle's plugins
 
 
-## Walkthrough
+## Walk-through
 
 See the following screencast for a walkthrough of Kronicle's features:
 
-[Kronicle Walkthrough](https://youtu.be/xNvoxBmMQdk){: .btn .btn-green }
+[Kronicle Walk-through Video](https://youtu.be/xNvoxBmMQdk){: .btn .btn-blue }
 
 
 ## Code
 
 See the following repo for Kronicle's source code:
 
-[GitHub](https://github.com/kronicle-tech/kronicle){: .btn .btn-green }
+[Kronicle code on GitHub](https://github.com/kronicle-tech/kronicle){: .btn .btn-blue }
