@@ -46,8 +46,10 @@ to configure some of those plugins.
 
 ## GitHub Plugin
 
-The GitHub plugin is used to a) auto-discover GitHub repos containing `/kronicle.yaml` metadata files and b) 
-clone those repos to analyze their contents.  
+The GitHub plugin is used to: 
+
+1. Auto-discover GitHub repos containing `/kronicle.yaml` metadata files
+2. Clone those repos to analyze their contents
 
 The plugin can find Git repos in three different ways: 
 
@@ -62,6 +64,7 @@ These environment variables are used to configure the plugin:
 
 | Environment Variable                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Example Value    | Required? |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------|
+| PLUGINS_GITHUB_ENABLED                                     | Set to "true" to enable the plugin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | true             | Optional  |   
 | PLUGINS_GITHUB_ACCESS_TOKENS_{index}_USERNAME              | This is used to configure Kronicle to automatically scan all the Git repos that the specified user account has been granted access to.                                                                                                                                                                                                                                                                                                                                                                                  | some-github-user | Optional  |   
 | PLUGINS_GITHUB_ACCESS_TOKENS_{index}_VALUE                 | This setting must be used when the PLUGINS_GITHUB_ACCESS_TOKENS_{index}_USERNAME setting is used.  Care should be taken with what permissions are granted on GitHub for the access token.  If the access token is granted access to any private repos, regardless of what organization or user owns those private repos, then Kronicle Service will have access to those private repos too.                                                                                                                             | ghp_1234567890   | Optional  |   
 | PLUGINS_GITHUB_ORGANIZATIONS_{index}_ACCOUNT_NAME          | This is used to configure Kronicle to automatically scan all the Git repos owned by a particular organization on GitHub, looking for `kronicle.yaml` files.                                                                                                                                                                                                                                                                                                                                                             | kronicle-tech    | Optional  |
@@ -110,14 +113,15 @@ The plugin can find Git repos in three different ways:
 
 Environment variables supported by the plugin:
 
-| Environment Variable                                              | Description                                                                                                                                                                                                                                                                                                | Example Value            | Required? |
-|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|-----------|
-| PLUGINS_GITLAB_HOSTS_{index}_BASE_URL                             | The base URL of a GitLab instance.  Can be use used with https://gitlab.com and also a self-hosted GitLab instance                                                                                                                                                                                         | some-gitlab-user         | Optional  |   
-| PLUGINS_GITLAB_HOSTS_{index}_ACCESS_TOKENS_{index}_VALUE          | The access token.  Care should be taken with what permissions are granted on GITLAB for the access token.  If the access token is granted access to any private repos, regardless of what organization or user owns those private repos, then Kronicle Service will have access to those private repos too | some-gitlab-access-token | Optional  |   
-| PLUGINS_GITLAB_HOSTS_{index}_GROUPS_{index}_PATH                  | Namepath of a GitLab group.  The plugin will load all GitLab repos under this group that the specified access token has been granted access to                                                                                                                                                             | kronicle-tech            | Optional  |
-| PLUGINS_GITLAB_HOSTS_{index}_GROUPS_{index}_ACCESS_TOKEN_VALUE    | The access token                                                                                                                                                                                                                                                                                           | some-gitlab-access-token | Optional  |   
-| PLUGINS_GITLAB_HOSTS_{index}_USERS_{index}_USERNAME               | Name of a GitLab group.  The plugin will load all of this user's personal GitLab repos that the specified access token has been granted access to                                                                                                                                                          | some-gitlab-user         | Optional  |   
-| PLUGINS_GITLAB_HOSTS_{index}_USERS_{index}_ACCESS_TOKEN_VALUE     | The access token                                                                                                                                                                                                                                                                                           | some-gitlab-access-token | Optional  |
+| Environment Variable                                           | Description                                                                                                                                                                                                                                                                                                | Example Value            | Required? |
+|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|-----------|
+| PLUGINS_GITLAB_ENABLED                                         | Set to "true" to enable the plugin                                                                                                                                                                                                                                                                         | true                     | Optional  |   
+| PLUGINS_GITLAB_HOSTS_{index}_BASE_URL                          | The base URL of a GitLab instance.  Can be use used with https://gitlab.com and also a self-hosted GitLab instance                                                                                                                                                                                         | some-gitlab-user         | Optional  |   
+| PLUGINS_GITLAB_HOSTS_{index}_ACCESS_TOKENS_{index}_VALUE       | The access token.  Care should be taken with what permissions are granted on GITLAB for the access token.  If the access token is granted access to any private repos, regardless of what organization or user owns those private repos, then Kronicle Service will have access to those private repos too | some-gitlab-access-token | Optional  |   
+| PLUGINS_GITLAB_HOSTS_{index}_GROUPS_{index}_PATH               | Namepath of a GitLab group.  The plugin will load all GitLab repos under this group that the specified access token has been granted access to                                                                                                                                                             | kronicle-tech            | Optional  |
+| PLUGINS_GITLAB_HOSTS_{index}_GROUPS_{index}_ACCESS_TOKEN_VALUE | The access token                                                                                                                                                                                                                                                                                           | some-gitlab-access-token | Optional  |   
+| PLUGINS_GITLAB_HOSTS_{index}_USERS_{index}_USERNAME            | Name of a GitLab group.  The plugin will load all of this user's personal GitLab repos that the specified access token has been granted access to                                                                                                                                                          | some-gitlab-user         | Optional  |   
+| PLUGINS_GITLAB_HOSTS_{index}_USERS_{index}_ACCESS_TOKEN_VALUE  | The access token                                                                                                                                                                                                                                                                                           | some-gitlab-access-token | Optional  |
 
 
 ## BitBucket Server Plugin
@@ -129,9 +133,11 @@ Environment variables supported by the plugin:
 
 | Environment Variable                            | Description                                                                                                       | Example Value                       | Required? |
 |-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------|-----------|
+| PLUGINS_BITBUCKET_SERVER_ENABLED                | Set to "true" to enable the plugin                                                                                | true                                | Optional  |   
 | PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_BASE_URL | The base URL of a self-hosted Bitbucket Server instance                                                           | https://bitbucketserver.example.com | Optional  |   
 | PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_USERNAME | Username for calling the Bitbucket Server's API.  The plugin will load all Git repos that this user has access to | some-bitbucket-server-user          | Optional  |   
 | PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_PASSWORD | The password for the user account                                                                                 | some-bitbucket-server-user-password | Optional  |
+
 
 ## Excluding certain Git repos
 
@@ -143,20 +149,24 @@ plugin has found these Git repos:
 | REPO_FINDERS_IGNORED_REPOS_{index}_URL | Configures Git repos that Kronicle Service should ignore.  Multiple entries can be configured.  `{index}` should start from zero and be incremented by 1 for each Git repo URL. | https://github.com/kronicle-tech/kronicle-metadata-repo-template.git | Optional  |
 
 
-# SonarQube Plugin
+## AWS Plugin
 
-Kronicle can load metrics like unit test code coverage from SonarQube.  It supports both the cloud and self-hosted 
-versions of SonarQube.  
+Features of the AWS plugin:
 
-The plugin can be configured with these environment variables:
+1. Fetches the high-level details of the AWS managed resources in one or more AWS accounts and adds them to Kronicle's component catalog as components
+2. Fetches service dependencies from AWS X-Ray and loads them into Kronicle
 
-| Environment Variable                    | Description                                                                                                                                                                                                                                                                                                                      | Example Value         | Required? |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|-----------|
-| PLUGINS_SONARQUBE_BASE_URL              | This is optional.  Specifies the base URL of a SonarQube instance to retrieve code coverage metrics from.  It supports both self-hosted instances of SonarQube and also https://sonarcloud.io                                                                                                                                    | https://sonarcloud.io | Optional  |
-| PLUGINS_SONARQUBE_ORGANIZATIONS_{index} | This is optional.  Specifies 1 or more SonarQube organizations to retrieve code coverage metrics from.  It specifies the base URL of a SonarQube instance to retrieve code coverage figures from.  Multiple entries can be configured.  `{index}` should start from zero and be incremented by 1 for each SonarQube organization | kronicle-tech         | Optional  |   
+Environment variables supported by the plugin:
+
+| Environment Variable                           | Description                                                         | Example Value              | Required? |
+|------------------------------------------------|---------------------------------------------------------------------|----------------------------|-----------|
+| PLUGINS_AWS_ENABLED                            | Set to "true" to enable the plugin                                  | true                       | Optional  |   
+| PLUGINS_AWS_PROFILES_{index}_ACCESS_KEY_ID     | AWS credentials to use to call AWS APIs on behalf of an AWS account | some-aws-access-key-id     | Optional  |   
+| PLUGINS_AWS_PROFILES_{index}_SECRET_ACCESS_KEY | AWS credentials to use to call AWS APIs on behalf of an AWS account | some-aws-secret-access-key | Optional  |   
+| PLUGINS_AWS_PROFILES_{index}_REGIONS_{index}   | One or more AWS regions can be specified for a profile              | us-west-1                  | Optional  |
 
 
-# Zipkin Plugin
+## Zipkin Plugin
 
 Kronicle can use a Zipkin server instance to:
 
@@ -167,10 +177,11 @@ The plugin is configured via this environment variable:
 
 | Environment Variable    | Description                                                                        | Example Value                          | Required? |
 |-------------------------|------------------------------------------------------------------------------------|----------------------------------------|-----------|
+| PLUGINS_ZIPKIN_ENABLED  | Set to "true" to enable the plugin                                                 | true                                   | Optional  |   
 | PLUGINS_ZIPKIN_BASE_URL | This is optional.  Specifies the base URL of a [Zipkin](http://zipkin.io) instance | http://zipkin.zipkin.svc.cluster.local | Optional  |   
 
 
-# Datadog Plugin
+## Datadog Plugin
 
 This plugin uses Datadog's Service Dependencies API endpoint to find dependencies between components in your stack.  
 
@@ -178,13 +189,28 @@ The plugin is configured via these environment variables:
 
 | Environment Variable                              | Description                                                                                                              | Example Value             | Required? |
 |---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------|
+| PLUGINS_DATADOG_ENABLED                           | Set to "true" to enable the plugin                                                                                       | true                      | Optional  |   
 | PLUGINS_DATADOG_BASE_URL                          | This is optional.  Specifies the base URL for Datadog's APIs.  Can be used to point at Datadog's EU instance of its APIs | https://api.datadoghq.com | Optional  |   
 | PLUGINS_DATADOG_API_KEY                           | Datadog API key                                                                                                          | some-api-key              | Optional  |   
 | PLUGINS_DATADOG_APPLICATION_KEY                   | This is optional.  Specifies the base URL for Datadog's APIs.  Can be used to point at Datadog's EU instance of its APIs | some-application-key      | Optional  |   
 | PLUGINS_DATADOG_DEPENDENCIES_ENVIRONMENTS_{index} | The names of 1 or more environments configured in Datadog for which service dependencies should be fetched               | production                | Mandatory |   
 
 
-# Key Software Plugin
+## SonarQube Plugin
+
+Kronicle can load metrics like unit test code coverage from SonarQube.  It supports both the cloud and self-hosted
+versions of SonarQube.
+
+The plugin can be configured with these environment variables:
+
+| Environment Variable                    | Description                                                                                                                                                                                                                                                                                                                      | Example Value         | Required? |
+|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|-----------|
+| PLUGINS_SONARQUBE_ENABLED               | Set to "true" to enable the plugin                                                                                                                                                                                                                                                                                               | true                  | Optional  |   
+| PLUGINS_SONARQUBE_BASE_URL              | This is optional.  Specifies the base URL of a SonarQube instance to retrieve code coverage metrics from.  It supports both self-hosted instances of SonarQube and also https://sonarcloud.io                                                                                                                                    | https://sonarcloud.io | Optional  |
+| PLUGINS_SONARQUBE_ORGANIZATIONS_{index} | This is optional.  Specifies 1 or more SonarQube organizations to retrieve code coverage metrics from.  It specifies the base URL of a SonarQube instance to retrieve code coverage figures from.  Multiple entries can be configured.  `{index}` should start from zero and be incremented by 1 for each SonarQube organization | kronicle-tech         | Optional  |   
+
+
+## Key Software Plugin
 
 Kronicle can detect the software dependencies in nodejs and Gradle codebases.  Typical codebases can contain 10s to 
 1000s of dependencies.  The Key Software plugin can be used to summarise software dependencies into a list of 
