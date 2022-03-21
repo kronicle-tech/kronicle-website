@@ -25,7 +25,7 @@ The following plugins are available for Kronicle and come bundled in the Docker 
 
 ## GitHub Plugin
 
-<img src="assets/third-party-logos/github/GitHub_Logo_White.png" style="max-width: 200px">
+<img src="assets/third-party-logos/github/GitHub_Logo_White.png" width="200">
 
 Uses GitHub's APIs to find Git repos containing a `kroncile.yaml` file.
 
@@ -69,6 +69,8 @@ variables.
 
 ## AWS Plugin
 
+<img src="assets/third-party-logos/aws/powered-by-aws-white.png" width="200" style="margin-top: 15px">
+
 Features of the AWS plugin: 
 
 1. Fetches the high-level details of the AWS managed resources in one or more AWS accounts and adds them to Kronicle's component catalog as components
@@ -80,7 +82,7 @@ variables.
 
 ## Git Plugin
 
-<img src="assets/third-party-logos/git/Git-Logo-White.png" width="200">
+<img src="assets/third-party-logos/git/Git-Logo-White.png" width="200" style="margin-top: 15px">
 
 Clones Git repos found by the GitHub, GitLab and Bitbucket Server plugins.  Git repo clones are used by other plugins like the OpenAPI and Node.js plugins.  
 
