@@ -11,7 +11,7 @@ menu:
     parent: "plugins"
 weight: 210
 toc: true
-layout: single
+url: "/docs/plugins/"
 ---
 
 ## GitHub Plugin

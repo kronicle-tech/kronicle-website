@@ -10,7 +10,7 @@ menu:
   docs:
     parent: "get-started"
 weight: 110
-layout: single
+url: "/docs/get-started/"
 ---
 
 ## Live Demo

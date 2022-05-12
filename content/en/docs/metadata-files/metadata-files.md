@@ -10,6 +10,7 @@ menu:
   docs:
     parent: "metadata-files"
 weight: 510
+url: "/docs/metadata-files/"
 ---
 
 

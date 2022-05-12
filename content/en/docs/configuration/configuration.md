@@ -10,6 +10,7 @@ menu:
   docs:
     parent: "configuration"
 weight: 720
+url: "/docs/configuration/"
 ---
 
 
