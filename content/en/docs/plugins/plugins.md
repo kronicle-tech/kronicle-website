@@ -10,7 +10,8 @@ menu:
   docs:
     parent: "plugins"
 weight: 210
-toc: true
+toc: false
+layout: plugins
 url: "/docs/plugins/"
 ---
 
