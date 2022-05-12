@@ -1,14 +1,14 @@
-name = "Doks"
+name = "Kronicle"
 license = "MIT"
-licenselink = "https://github.com/h-enk/doks/blob/master/LICENSE"
-description = "Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+licenselink = "https://github.com/kronicle-tech/kronicle/blob/main/LICENSE"
+description = "Open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
 
-homepage = "https://github.com/h-enk/doks"
-demosite = "https://doks.netlify.app"
+homepage = "https://github.com/kronicle-tech/kronicle"
+demosite = "https://demo.kronicle.tech"
 
-tags = ["landing page", "documentation", "blog", "minimal", "modern", "customizable", "search", "dark mode", "bootstrap"]
-features = ["security aware", "fast by default", "seo-ready", "development tools", "bootstrap framework", "netlify-ready", "full text search", "page layouts", "dark mode"]
+tags = ["open source dashboards", "developer experience", "API docs"]
+features = ["fully automated integrations", "simple deployments", "component catalog", "OpenAPI and GraphQL docs", "npm and Gradle dependencies", "environment status dashboards"]
 
 [author]
-  name = "Henk Verlinde"
-  homepage = "https://henkverlinde.com"
+  name = "Kronicle"
+  homepage = "https://kronicle.tech"

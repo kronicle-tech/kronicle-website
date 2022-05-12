@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://kronicle.tech"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

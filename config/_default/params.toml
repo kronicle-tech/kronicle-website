@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Kronicle"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Open source developer platform"
+description = "Open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
 
 ## Documentation
 # docsVersion = "0.3"
@@ -13,20 +13,20 @@ description = "Doks is a Hugo theme for building secure, fast, and SEO-ready doc
 images = ["doks.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+titleHome = "Kronicle"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@kronicle_tech"
+twitterCreator = "@simondean"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "Kronicle"
+schemaAuthor = "Simon Dean"
+schemaAuthorTwitter = "https://twitter.com/simondean"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/simon-dean-22382619/"
+schemaAuthorGitHub = "https://github.com/simondean"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -34,9 +34,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/kronicle_tech"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/kronicle-tech/kronicle"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -57,7 +57,7 @@ smallLimit = "300"
 footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) 2021-2022 Simon Dean"
 
 # Alert
 alert = false
@@ -69,10 +69,10 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
-docsRepoBranch = "master"
+docsRepo = "https://github.com/kronicle-tech/kronicle-website"
+docsRepoBranch = "main"
 docsRepoSubPath = ""
-editPage = false
+editPage = true
 lastMod = false
 
 [options]
@@ -91,5 +91,5 @@ lastMod = false
 
 [menu]
   [menu.section]
-    auto = true
+    auto = false
     collapsibleSidebar = true

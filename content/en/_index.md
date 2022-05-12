@@ -1,9 +1,9 @@
 ---
-title : "Modern Documentation Theme"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-date: 2020-10-06T08:47:36+00:00
-lastmod: 2020-10-06T08:47:36+00:00
+title : "Kronicle"
+description: "Open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
+lead: "Open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
+date: 2022-05-11T20:00:00+00:00
+lastmod: 2022-05-11T20:00:00+00:00
 draft: false
 images: []
 ---
