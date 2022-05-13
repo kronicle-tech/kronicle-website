@@ -1,0 +1,18 @@
+<div class="col">
+  <div class="card" style="border-color: #6c757d; min-height: 18rem;">
+    <div class="card-body">
+      {{ if .Get "img-src" }}
+      <div class="float-end" style="background-color: {{ .Get "img-bg-color" }}; padding: 10px;">
+        <img src="{{ .Get "img-src" }}" alt="{{ .Get "name" }}" width="100">
+      </div>
+      {{ end }}
+      <h5 class="card-title">
+        {{ .Get "name" }}
+      </h5>
+      <p class="card-text">
+        {{ .Inner }}
+      </p>
+      <a href="/docs/plugins/{{ with .Get "id" }}{{.}}{{ end }}/" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+</div>

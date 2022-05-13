@@ -1,0 +1,79 @@
+[build]
+  publish = "public"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "17.8.0"
+  NPM_VERSION = "8.5.5"
+
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.next]
+  command = "npm run build"
+
+[context.next.environment]
+  HUGO_ENV = "next"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+    baseUrl = "https://doks.netlify.app/"
+    sitemapPath = "/sitemap.xml"
+    ignorePeriod = 0
+    providers = [
+      "google",
+      "bing",
+      "yandex"
+    ]
+
+[dev]
+  framework = "#custom"
+  command = "npm run start"
+  targetPort = 1313
+  port = 8888
+  publish = "public"
+  autoLaunch = false
+
+[[redirects]]
+  from = "/getting-started"
+  to = "/docs/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plugins"
+  to = "/docs/plugins/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/metadata-files"
+  to = "/docs/metadata-files/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/configuration"
+  to = "/docs/configuration/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/roadmap"
+  to = "/docs/roadmap/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/deploying-to-kubernetes"
+  to = "/docs/deployment/kubernetes/"
+  status = 301
+  force = true

@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}get-started/" role="button">Get Started</a>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/kronicle-tech/kronicle">GitHub</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Fully automated integrations</h2>
+          <p>Simple, automated <a href="/plugins">integrations</a> with AWS, GitHub, GitLab, Zipkin and more.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Simple deployments 🚀</h2>
+          <p>Deploys as two Docker containers, no databases to manage.  Configuration is via environment variables passed to the containers.  Kroncile provides a <a href="https://github.com/kronicle-tech/kronicle-cdk-config">CDK project</a> for deploying to AWS, Helm charts for deploying to Kubernetes and a <a href="https://github.com/kronicle-tech/kronicle-docker-compose">Docker Compose project</a> for running locally.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Component catalog 📚</h2>
+          <p>Document and visualise all the components in a tech stack - frontends, microservices, databases, cloud resources etc.  Provide info on which teams own components and what components are used for.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">OpenAPI and GraphQL docs</h2>
+          <p>Kronicle serves API documentation for OpenAPI specs and GraphQL schemas.  It automatically downloads the specs and schemas from URLs and Git repos.  It uses <a href="https://github.com/Redocly/redoc">Redoc</a> and <a href="https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a> to render API documentation.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">npm and Gradle dependencies</h2>
+          <p>Automatically scan codebases for the npm packages and Gradle dependencies they use.  Provide info on the main libraries and frameworks used by each codebase.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Environment status dashboards</h2>
+          <p>Automated dashboards that provide build statuses for GitHub Actions &amp; GitLab pipelines and health statuses for AWS Synthetics Canaries and AWS CloudWatch Logs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}

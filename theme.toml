@@ -1,0 +1,14 @@
+name = "Kronicle"
+license = "MIT"
+licenselink = "https://github.com/kronicle-tech/kronicle/blob/main/LICENSE"
+description = "Open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
+
+homepage = "https://github.com/kronicle-tech/kronicle"
+demosite = "https://demo.kronicle.tech"
+
+tags = ["open source dashboards", "developer experience", "API docs"]
+features = ["fully automated integrations", "simple deployments", "component catalog", "OpenAPI and GraphQL docs", "npm and Gradle dependencies", "environment status dashboards"]
+
+[author]
+  name = "Kronicle"
+  homepage = "https://kronicle.tech"
