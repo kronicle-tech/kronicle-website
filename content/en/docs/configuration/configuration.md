@@ -35,4 +35,4 @@ This table details the environment variables that can be passed into the Docker 
 ## Kronicle Service Config
 
 Kronicle's backend service has a plugin based architecture.  See the individual pages for
-[Kronicle's plugins](/docs/plugins/plugins/) for the environment variables each plugin supports.
+[Kronicle's plugins](/docs/plugins/) for the environment variables each plugin supports.
