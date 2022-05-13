@@ -1,11 +1,12 @@
 ---
-title: "Say hello to Doks 👋"
-description: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
-lead: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
-date: 2020-11-04T09:19:42+01:00
-lastmod: 2020-11-04T09:19:42+01:00
+title: "New Kronicle website"
+description: "Hi 👋 and welcome to Kronicle's new blog and new website"
+lead: "Hi 👋 and welcome to Kronicle's new blog and new website"
+date: 2022-05-13T20:00:00+00:00
+lastmod: 2022-05-13T20:00:00+00:00
 draft: false
 weight: 50
-images: ["say-hello-to-doks.png"]
-contributors: ["Henk Verlinde"]
+contributors: ["Simon Dean"]
 ---
+
+See the new [Plugins page](/docs/plugins/) which provides a great overview of all of Kronicle's plugins.

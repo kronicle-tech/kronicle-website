@@ -1,7 +1,7 @@
 ---
 title: "OpenAPI"
-description: "A plugin fetches OpenAPI specs and uses them to render OpenAPI based API documentation."
-lead: "A plugin fetches OpenAPI specs and uses them to render OpenAPI based API documentation."
+description: "A plugin fetches that OpenAPI specs and uses them to render OpenAPI based API documentation."
+lead: "A plugin fetches that OpenAPI specs and uses them to render OpenAPI based API documentation."
 date: 2022-05-11T20:00:00+00:00
 lastmod: 2022-05-11T20:00:00+00:00
 draft: false
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "plugins"
-weight: 340
+weight: 350
 toc: true
 ---
 

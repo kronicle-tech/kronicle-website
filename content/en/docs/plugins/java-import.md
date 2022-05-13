@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "plugins"
-weight: 290
+weight: 300
 toc: true
 ---
 

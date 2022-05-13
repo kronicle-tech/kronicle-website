@@ -41,3 +41,39 @@
   port = 8888
   publish = "public"
   autoLaunch = false
+
+[[redirects]]
+  from = "/getting-started"
+  to = "/docs/get-started/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plugins"
+  to = "/docs/plugins/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/metadata-files"
+  to = "/docs/metadata-files/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/configuration"
+  to = "/docs/configuration/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/roadmap"
+  to = "/docs/roadmap/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/deploying-to-kubernetes"
+  to = "/docs/deployment/kubernetes/"
+  status = 301
+  force = true
