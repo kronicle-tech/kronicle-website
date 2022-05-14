@@ -21,7 +21,7 @@ Kronicle and can be viewed via Kronicle's web UI.
 
 ## Adding GraphQL schema details to a kronicle.yaml metadata file
 
-GraphQL schemas can be set in a `/kronicle.yaml` in a Git repo:
+GraphQL schemas can be set in a `/kronicle.yaml` file in a Git repo:
 
 ```yaml
 components:
