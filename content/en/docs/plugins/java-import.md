@@ -13,6 +13,7 @@ weight: 300
 toc: true
 ---
 
+## Features
 
 Searches cloned Git repos for all Java import statements.  For each Git repo, creates a list of all the Java types
 imported by those import statements.
