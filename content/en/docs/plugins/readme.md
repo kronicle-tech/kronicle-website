@@ -13,4 +13,6 @@ weight: 360
 toc: true
 ---
 
+## Features
+
 Finds and loads `README` files in the root of the cloned Git repos and loads them into Kronicle.

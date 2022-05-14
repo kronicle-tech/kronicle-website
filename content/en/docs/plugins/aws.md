@@ -38,33 +38,31 @@ The following environment variable are passed to the `kronicle-serice` container
 "PLUGINS_AWS_PROFILES_1_REGIONS_0=us-west-1"
 "PLUGINS_AWS_PROFILES_1_REGIONS_1=us-west-2"
 "PLUGINS_AWS_PROFILES_1_ACCESS_KEY_ID=some-access-key-id"
-"PLUGINS_AWS_PROFILES_1_SECRET_ACCESS_KEY=some-secret-access-key"
->}}
+"PLUGINS_AWS_PROFILES_1_SECRET_ACCESS_KEY=some-secret-access-key" >}}
+{{< /env-vars >}}
 
 
 ## Mandatory environment variables
 
-{{< env-var name="PLUGINS_AWS_ENABLED" example="true"  >}}
+{{< env-vars "PLUGINS_AWS_ENABLED=true" >}}
 Set to "true" to enable the plugin
-{{< /env-var >}}
+{{< /env-vars >}}
 
-{{< env-var name="PLUGINS_AWS_PROFILES_{index}_ENVIRONMENT_ID" example="production"  >}}
+{{< env-vars "PLUGINS_AWS_PROFILES_{index}_ENVIRONMENT_ID=production" >}}
 Can be set to any value that represents one of your environments.  Must be in kebab-case
-{{< /env-var >}}
+{{< /env-vars >}}
 
-{{< env-var name="PLUGINS_AWS_PROFILES_{index}_REGIONS_{index}" example="us-west-1"  >}}
+{{< env-vars "PLUGINS_AWS_PROFILES_{index}_REGIONS_{index}=us-west-1" >}}
 One or more AWS regions can be specified for a profile
-{{< /env-var >}}
+{{< /env-vars >}}
 
 
 ## Optional environment variables
 
-{{< env-var name="PLUGINS_AWS_PROFILES_{index}_ACCESS_KEY_ID" example="some-aws-access-key-id"  >}}
+{{< env-vars
+"PLUGINS_AWS_PROFILES_{index}_ACCESS_KEY_ID=some-aws-access-key-id"
+"PLUGINS_AWS_PROFILES_{index}_SECRET_ACCESS_KEY=some-aws-secret-access-key" >}}
 AWS credentials to use to call AWS APIs on behalf of an AWS account.  Credentials are not needed if the
 kronicle-service container is deployed to an AWS container host like AWS ECS and you want to the same AWS account
 the container is running in
-{{< /env-var >}}
-
-{{< env-var name="PLUGINS_AWS_PROFILES_{index}_SECRET_ACCESS_KEY" example="some-aws-secret-access-key"  >}}
-See description for PLUGINS_AWS_PROFILES_{index}_ACCESS_KEY_ID
-{{< /env-var >}}
+{{< /env-vars >}}

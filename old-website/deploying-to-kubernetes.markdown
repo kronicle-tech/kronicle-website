@@ -9,6 +9,8 @@ permalink: /deploying-to-kubernetes
 has_toc: true
 ---
 
+## Features
+
 # Deploying to Kubernetes
 {: .no_toc }
 
@@ -19,11 +21,11 @@ has_toc: true
 1. TOC
 {:toc}
 
-   
+
 ## Requirements
 
 1. Have a [kubeconfig](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/) file (default location is ~/.kube/config).
-2. Have [Helm v3 installed](https://helm.sh/docs/intro/install/).  
+2. Have [Helm v3 installed](https://helm.sh/docs/intro/install/).
 
 
 ## Install Kronicle

@@ -3,7 +3,13 @@
   {{ if hasPrefix . "#" }}
   <span class="text-success">{{ . }}</span><br>
   {{ else }}
+    {{ if eq (len .) 0 }}
+  <br>
+    {{ else }}
   <span class="text-info">{{ index (split . "=") 0 }}</span><span class="text-secondary">=</span><span class="text-light">{{ index (split . "=") 1 }}</span><br>
+    {{ end }}
   {{ end }}
 {{ end }}
 </p>
+
+<p class="mb-5">{{ .Inner | markdownify }}</p>

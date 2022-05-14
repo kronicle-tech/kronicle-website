@@ -13,4 +13,6 @@ weight: 320
 toc: true
 ---
 
+## Features
+
 Counts the number of lines of code by file extension in each Git repo.

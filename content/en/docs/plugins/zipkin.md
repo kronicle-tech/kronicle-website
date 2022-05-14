@@ -13,6 +13,7 @@ weight: 390
 toc: true
 ---
 
+## Features
 
 Calls Zipkin's API endpoints to find dependencies between components/services in your stack.
 
@@ -24,9 +25,26 @@ Kronicle can use a Zipkin server instance to:
 1. Find dependencies between components in your stack
 2. Calculate response times for your components' endpoints
 
-The plugin is configured via these environment variables:
 
-| Environment Variable    | Description                                                                        | Example Value                          | Required? |
-|-------------------------|------------------------------------------------------------------------------------|----------------------------------------|-----------|
-| PLUGINS_ZIPKIN_ENABLED  | Set to "true" to enable the plugin                                                 | true                                   | Optional  |
-| PLUGINS_ZIPKIN_BASE_URL | This is optional.  Specifies the base URL of a [Zipkin](http://zipkin.io) instance | http://zipkin.zipkin.svc.cluster.local | Optional  |
+## Plugin configuration
+
+The following environment variable are passed to the `kronicle-serice` container to configure the plugin
+
+
+## Example configuration
+
+{{< env-vars
+"PLUGINS_ZIPKIN_ENABLED=true"
+"PLUGINS_ZIPKIN_BASE_URL=https://zipkin.example.com" >}}
+{{< /env-vars >}}
+
+
+## Mandatory environment variables
+
+{{< env-vars "PLUGINS_SONARQUBE_ENABLED=true" >}}
+Set to "true" to enable the plugin
+{{< /env-vars >}}
+
+{{< env-vars "PLUGINS_ZIPKIN_BASE_URL=https://zipkin.example.com" >}}
+Specifies the base URL of a [Zipkin](http://zipkin.io) instance
+{{< /env-vars >}}

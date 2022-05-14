@@ -13,16 +13,49 @@ weight: 310
 toc: true
 ---
 
+## Features
 
 Kronicle can detect the software dependencies in nodejs and Gradle codebases.  Typical codebases can contain 10s to
 1000s of dependencies.  The Key Software plugin can be used to summarise software dependencies into a list of
 "key dependencies".  For example, dependencies like Angular, React, Spring Boot, Micronaut etc. might be "key software"
 in a particular tech stack.
 
-The plugin is configured via these environment variables:
+## Plugin configuration
 
-| Environment Variable                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Example Value                | Required? |
-|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|-----------|
-| PLUGINS_KEY_SOFTWARE_DEFAULT_RULES_ENABLED               | Used to disable Kronicle's built-in key software rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | false                        | Optional  |
-| PLUGINS_KEY_SOFTWARE_RULES_{index}_SOFTWARE_NAME_PATTERN | This is used to tell Kronicle about "key software" in your tech stack.  This could be used to configure software like Gradle, Spring Boot, Micronaut, React, Vue.js etc. as being important software in your tech stack.  You can configure multiple rules.  The `{index}` in the environment name should start from 0 and be incremented for each rule.  Contains a regular expression to use to match a particular piece of software being used by a component.  For Java based components, this would a regular expression to make the "groupId:artifactId" of a JAR.  For a node.js based component, this would be a regular expression to match an npm package name | ^io.micronaut:micronaut-bom$ | Optional  |
-| PLUGINS_KEY_SOFTWARE_RULES_{index}_NAME                  | This is paired with the SOFTWARE_NAME_PATTERN environment variable.  It configures what name Kronicle should show in Kronicle App when a piece of software matches the associated SOFTWARE_NAME_PATTERN.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Micronaut                    | Optional  |
+The following environment variable are passed to the `kronicle-serice` container to configure the plugin
+
+
+## Example configuration
+
+{{< env-vars
+"PLUGINS_KEY_SOFTWARE_DEFAULT_RULES_ENABLED=true"
+"PLUGINS_KEY_SOFTWARE_RULES_0_SOFTWARE_NAME_PATTERN=^io.micronaut:micronaut-bom$"
+"PLUGINS_KEY_SOFTWARE_RULES_0_NAME=Micronaut"
+"PLUGINS_KEY_SOFTWARE_RULES_1_SOFTWARE_NAME_PATTERN=^core-js$"
+"PLUGINS_KEY_SOFTWARE_RULES_1_NAME=core-js" >}}
+{{< /env-vars >}}
+
+
+## Optional environment variables
+
+{{< env-vars "PLUGINS_KEY_SOFTWARE_DEFAULT_RULES_ENABLED=true" >}}
+Used to disable Kronicle's built-in key software rules.  See the `key-software:` part of
+https://github.com/kronicle-tech/kronicle/blob/main/service/src/main/resources/application.yml for the built-in rules
+{{< /env-vars >}}
+
+{{< env-vars "PLUGINS_KEY_SOFTWARE_RULES_{index}_SOFTWARE_NAME_PATTERN=^io.micronaut:micronaut-bom$" >}}
+This is used to tell Kronicle about "key software" in your tech stack.  This could be used to configure software like
+Gradle, Spring Boot, Micronaut, React, Vue.js etc. as being important software in your tech stack.  You can configure
+multiple rules.
+
+The `{index}` in the environment name should start from 0 and be incremented for each rule.
+
+It contains a regular expression to use to match a particular piece of software being used by a component.  For Java
+based components, this would a regular expression to make the "groupId:artifactId" of a JAR.  For a node.js based
+components, this would be a regular expression to match an npm package name
+{{< /env-vars >}}
+
+{{< env-vars "PLUGINS_KEY_SOFTWARE_RULES_{index}_NAME=Micronaut" >}}
+This is paired with the SOFTWARE_NAME_PATTERN environment variable.  It configures what name Kronicle should show in
+Kronicle App when a piece of software matches the associated SOFTWARE_NAME_PATTERN.
+{{< /env-vars >}}

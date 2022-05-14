@@ -13,16 +13,45 @@ weight: 230
 toc: true
 ---
 
+## Features
+
 Uses the Bitbucket Server's APIs to find Git repos containing a `kroncile.yaml` file.
 
 Only supports self-hosted Bitbucket Server instances and not the cloud version of Bitbucket, which has an incompatible
 API.
 
-Environment variables supported by the plugin:
+## Plugin configuration
 
-| Environment Variable                            | Description                                                                                                       | Example Value                       | Required? |
-|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------|-----------|
-| PLUGINS_BITBUCKET_SERVER_ENABLED                | Set to "true" to enable the plugin                                                                                | true                                | Optional  |
-| PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_BASE_URL | The base URL of a self-hosted Bitbucket Server instance                                                           | https://bitbucketserver.example.com | Optional  |
-| PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_USERNAME | Username for calling the Bitbucket Server's API.  The plugin will load all Git repos that this user has access to | some-bitbucket-server-user          | Optional  |
-| PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_PASSWORD | The password for the user account                                                                                 | some-bitbucket-server-user-password | Optional  |
+The following environment variable are passed to the `kronicle-serice` container to configure the plugin
+
+
+## Example configuration
+
+{{< env-vars
+"PLUGINS_BITBUCKET_SERVER_ENABLED=true"
+"PLUGINS_BITBUCKET_SERVER_HOSTS_0_BASE_URL=https://bitbucketserver1.example.com"
+"PLUGINS_BITBUCKET_SERVER_HOSTS_0_USERNAME=some-bitbucket-server-user"
+"PLUGINS_BITBUCKET_SERVER_HOSTS_0_PASSWORD=some-bitbucket-server-user-password"
+"PLUGINS_BITBUCKET_SERVER_HOSTS_1_BASE_URL=https://bitbucketserver2.example.com"
+"PLUGINS_BITBUCKET_SERVER_HOSTS_1_USERNAME=some-other-bitbucket-server-user"
+"PLUGINS_BITBUCKET_SERVER_HOSTS_1_PASSWORD=some-other-bitbucket-server-user-password" >}}
+{{< /env-vars >}}
+
+
+## Mandatory environment variables
+
+{{< env-vars "PLUGINS_BITBUCKET_SERVER_ENABLED=true" >}}
+Set to "true" to enable the plugin
+{{< /env-vars >}}
+
+{{< env-vars "PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_BASE_URL=https://bitbucketserver.example.com" >}}
+The base URL of a self-hosted Bitbucket Server instance
+{{< /env-vars >}}
+
+{{< env-vars "PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_USERNAME=some-bitbucket-server-user" >}}
+Username for calling the Bitbucket Server's API.  The plugin will load all Git repos that this user has access to
+{{< /env-vars >}}
+
+{{< env-vars "PLUGINS_BITBUCKET_SERVER_HOSTS_{index}_PASSWORD=some-bitbucket-server-user-password" >}}
+The password for the user account
+{{< /env-vars >}}

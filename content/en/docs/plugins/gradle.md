@@ -13,5 +13,7 @@ weight: 280
 toc: true
 ---
 
+## Features
+
 Searches cloned Git repos for Gradle build scripts.  Processes those build scripts - without executing them - to
 discover all software dependencies of those codebases.

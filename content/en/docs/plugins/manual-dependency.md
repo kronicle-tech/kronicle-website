@@ -13,5 +13,6 @@ weight: 330
 toc: true
 ---
 
+## Features
 
 Extracts component/service dependencies from `kronicle.yaml` files and loads them into Kronicle.

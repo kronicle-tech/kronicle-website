@@ -13,5 +13,7 @@ weight: 380
 toc: true
 ---
 
+## Features
+
 Finds To Do comments like `// TODO:` in cloned Git repos and loads the details into Kronicle.  The details of every
 found To Do comment can view viewed in Kronicle's web UI.                                                                                                                                                                                                      |

@@ -13,5 +13,7 @@ weight: 340
 toc: true
 ---
 
+## Features
+
 Searches cloned Git repos for `package.json` and `package-lock.json` files.  Finds all the npm packages used by each
 Git repo, including the names and versions of those NPM packages.
