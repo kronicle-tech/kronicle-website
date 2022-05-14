@@ -23,7 +23,7 @@ Any found/download OpenAPI specs are loaded into Kronicle and can be viewed via 
 
 ## Adding OpenAPI spec details to a kronicle.yaml metadata file
 
-OpenAPI specs can be set in a `/kronicle.yaml` in a Git repo:
+OpenAPI specs can be set in a `/kronicle.yaml` file in a Git repo:
 
 ```yaml
 components:
