@@ -1,7 +1,7 @@
 ---
 title: "Roadmap"
-description: "Kronicle's short term roadmap."
-lead: "Kronicle's short term roadmap."
+description: "Kronicle's short term development roadmap."
+lead: "Kronicle's short term development roadmap."
 date: 2022-05-11T20:00:00+00:00
 lastmod: 2022-05-11T20:00:00+00:00
 draft: false

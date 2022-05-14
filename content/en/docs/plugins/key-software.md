@@ -1,7 +1,7 @@
 ---
 title: "Key Software"
-description: "A plugin that summerises the key software used by codebases."
-lead: "A plugin that summerises the key software used by codebases."
+description: "A plugin that summarises the key software used by codebases."
+lead: "A plugin that summarises the key software used by codebases."
 date: 2022-05-11T20:00:00+00:00
 lastmod: 2022-05-11T20:00:00+00:00
 draft: false
