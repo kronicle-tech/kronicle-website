@@ -31,7 +31,7 @@ Kronicle can use a Zipkin server instance to:
 The following environment variable are passed to the `kronicle-serice` container to configure the plugin
 
 
-## Example configuration
+### Example configuration
 
 {{< env-vars
 "PLUGINS_ZIPKIN_ENABLED=true"
@@ -39,7 +39,7 @@ The following environment variable are passed to the `kronicle-serice` container
 {{< /env-vars >}}
 
 
-## Mandatory environment variables
+### Mandatory environment variables
 
 {{< env-vars "PLUGINS_SONARQUBE_ENABLED=true" >}}
 Set to "true" to enable the plugin
