@@ -35,7 +35,7 @@ The plugin can find Git repos in three different ways:
 The following environment variable are passed to the `kronicle-serice` container to configure the plugin
 
 
-## Example configuration
+### Example configuration
 
 {{< env-vars
 "PLUGINS_GITHUB_ENABLED=true"
@@ -53,14 +53,14 @@ The following environment variable are passed to the `kronicle-serice` container
 {{< /env-vars >}}
 
 
-## Mandatory environment variables
+### Mandatory environment variables
 
 {{< env-vars "PLUGINS_GITLAB_ENABLED=true" >}}
 Set to "true" to enable the plugin
 {{< /env-vars >}}
 
 
-## Optional environment variables
+### Optional environment variables
 
 {{< env-vars "PLUGINS_GITLAB_HOSTS_{index}_BASE_URL=" >}}
 The base URL of a GitLab instance.  Can be use used with https://gitlab.com and also a self-hosted GitLab instance
@@ -95,7 +95,7 @@ Configures Git repos that Kronicle Service should ignore.  Multiple entries can 
 {{< /env-vars >}}
 
 
-## Excluding certain Git repos
+### Excluding certain Git repos
 
 This environment variable can be used to prevent Kronicle for loading certain Git repos, regardless of which Kronicle
 plugin has found these Git repos:

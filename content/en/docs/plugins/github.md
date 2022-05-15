@@ -35,7 +35,7 @@ configured.
 The following environment variable are passed to the `kronicle-serice` container to configure the plugin
 
 
-## Example configuration
+### Example configuration
 
 {{< env-vars
 "PLUGINS_GITHUB_ENABLED=true"
@@ -53,14 +53,14 @@ The following environment variable are passed to the `kronicle-serice` container
 {{< /env-vars >}}
 
 
-## Mandatory environment variables
+### Mandatory environment variables
 
 {{< env-vars "PLUGINS_GITHUB_ENABLED=true" >}}
 Set to "true" to enable the plugin
 {{< /env-vars >}}
 
 
-## Optional environment variables
+### Optional environment variables
 
 {{< env-vars "PLUGINS_GITHUB_ACCESS_TOKENS_{index}_USERNAME=some-github-user" >}}
 This is used to configure Kronicle to automatically scan all the Git repos that the specified user account has been granted access to.
@@ -99,7 +99,7 @@ Configures Git repos that Kronicle Service should ignore.  Multiple entries can 
 {{< /env-vars >}}
 
 
-## Granting access to two GitHub organizations
+### Granting access to two GitHub organizations
 
 Here is an example of the environment variables needed to configure Kronicle to load all the Git repos for two
 independent GitHub organizations:
@@ -115,7 +115,7 @@ independent GitHub organizations:
 {{< /env-vars >}}
 
 
-## Granting access to a GitHub organization's repos via a GitHub user account
+### Granting access to a GitHub organization's repos via a GitHub user account
 
 Here is an example of configuring Kronicle to load all Git repos via a `machine` GitHub account.  This approach will
 grant Kronicle access to all the repos that the user account has been _explicitly_ granted access to.  That includes
@@ -127,7 +127,7 @@ access granted directly to the user account and access granted via a GitHub team
 {{< /env-vars >}}
 
 
-## Excluding certain Git repos
+### Excluding certain Git repos
 
 This environment variable can be used to prevent Kronicle for loading certain Git repos, regardless of which Kronicle
 plugin has found these Git repos:

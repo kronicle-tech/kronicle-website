@@ -25,7 +25,7 @@ in a particular tech stack.
 The following environment variable are passed to the `kronicle-serice` container to configure the plugin
 
 
-## Example configuration
+### Example configuration
 
 {{< env-vars
 "PLUGINS_KEY_SOFTWARE_DEFAULT_RULES_ENABLED=true"
@@ -36,7 +36,7 @@ The following environment variable are passed to the `kronicle-serice` container
 {{< /env-vars >}}
 
 
-## Optional environment variables
+### Optional environment variables
 
 {{< env-vars "PLUGINS_KEY_SOFTWARE_DEFAULT_RULES_ENABLED=true" >}}
 Used to disable Kronicle's built-in key software rules.  See the `key-software:` part of
