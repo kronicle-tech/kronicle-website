@@ -12,7 +12,7 @@ description = "Open source platform for developer dashboards, a component catalo
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "kronicle.tech
+domainTLD = "kronicle.tech"
 titleHome = "Kronicle"
 
 ## Twitter Cards
