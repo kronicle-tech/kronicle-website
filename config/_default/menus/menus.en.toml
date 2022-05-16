@@ -1,29 +1,71 @@
 [[docs]]
   name = "Get Started"
-  weight = 10
+  weight = 1
   identifier = "get-started"
   url = "/docs/get-started/"
 
 [[docs]]
+  name = "Tutorial"
+  weight = 2
+  identifier = "tutorial"
+  url = "/docs/tutorial/"
+
+[[docs]]
+  name = "Deployment"
+  weight = 3
+  identifier = "deployment"
+  url = "/docs/deployment/"
+
+[[docs]]
+  name = "Configuration"
+  weight = 4
+  identifier = "configuration"
+  url = "/docs/configuration/"
+
+[[docs]]
   name = "Plugins"
-  weight = 20
+  weight = 5
   identifier = "plugins"
   url = "/docs/plugins/"
 
+[[docs]]
+  name = "Metadata Files"
+  weight = 6
+  identifier = "metadata-files"
+  url = "/docs/metadata-files/"
+
+[[docs]]
+  name = "Live Demo"
+  weight = 7
+  identifier = "live-demo"
+  url = "/docs/live-demo/"
+
+[[docs]]
+  name = "Roadmap"
+  weight = 8
+  identifier = "roadmap"
+  url = "/docs/roadmap/"
+
+
 [[main]]
   name = "Get Started"
-  weight = 10
+  weight = 1
   url = "/docs/get-started/"
 
 [[main]]
+  name = "Tutorial"
+  weight = 2
+  url = "/docs/tutorial/"
+
+[[main]]
   name = "Plugins"
-  weight = 20
+  weight = 3
   url = "/docs/plugins/"
 
 [[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 30
+  weight = 4
 
 
 [[social]]

@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "live-demo"
-weight: 910
+weight: 1
 url: "/docs/live-demo/"
 ---
 
