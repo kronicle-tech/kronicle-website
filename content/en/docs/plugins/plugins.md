@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "plugins"
-weight: 401
+weight: 1
 toc: true
 layout: plugins
 url: "/docs/plugins/"

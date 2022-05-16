@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "metadata-files"
-weight: 501
+weight: 1
 url: "/docs/metadata-files/"
 ---
 
