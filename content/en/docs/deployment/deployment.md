@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "deployment"
-weight: 1
+weight: 301
 url: "/docs/deployment/"
 toc: false
 ---

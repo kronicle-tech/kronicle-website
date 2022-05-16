@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "tutorial"
-weight: 1
+weight: 201
 url: "/docs/tutorial/"
 ---
 
