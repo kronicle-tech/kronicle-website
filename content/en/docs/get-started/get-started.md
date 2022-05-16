@@ -39,9 +39,9 @@ See [Deployment Options](/docs/deployment/) for a few ways to deploy Kronicle, i
 See [https://demo.kronicle.tech](https://demo.kronicle.tech) which is a real instance of Kronicle that contains real
 data.  Here are some interesting pages in the demo:
 
-1. Environment status page: https://demo.kronicle.tech/all-environments
-2. Kronicle's component catalog: https://demo.kronicle.tech/all-components
-3. Interactive architecture diagram: https://demo.kronicle.tech/all-components/dependencies
-4. Automated hosting and rendering of an OpenAPI spec: https://demo.kronicle.tech/components/kronicle-service/openapi-specs/1/content
-5. Automated hosting and rendering of a GraphQL schema: https://demo.kronicle.tech/components/kronicle-service/graphql-schemas/1/content
-6. Component info: https://demo.kronicle.tech/components/kronicle-service
+1. Environment status page: [https://demo.kronicle.tech/all-environments](https://demo.kronicle.tech/all-environments)
+2. Kronicle's component catalog: [https://demo.kronicle.tech/all-components](https://demo.kronicle.tech/all-components)
+3. Interactive architecture diagram: [https://demo.kronicle.tech/all-components/dependencies](https://demo.kronicle.tech/all-components/dependencies)
+4. Automated hosting and rendering of an OpenAPI spec: [https://demo.kronicle.tech/components/kronicle-service/openapi-specs/1/content](https://demo.kronicle.tech/components/kronicle-service/openapi-specs/1/content)
+5. Automated hosting and rendering of a GraphQL schema: [https://demo.kronicle.tech/components/kronicle-service/graphql-schemas/1/content](https://demo.kronicle.tech/components/kronicle-service/graphql-schemas/1/content)
+6. Component info: [https://demo.kronicle.tech/components/kronicle-service](https://demo.kronicle.tech/components/kronicle-service)
