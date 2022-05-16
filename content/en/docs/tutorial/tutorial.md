@@ -10,7 +10,7 @@ menu:
   docs:
     parent: "tutorial"
 weight: 1
-url: "/tutorial/"
+url: "/docs/tutorial/"
 ---
 
 ## Prerequisites

@@ -1,7 +1,7 @@
 ---
-title : "Get Started"
-description: "There are several ways to try Kronicle."
-lead: "There are several ways to try Kronicle."
+title : "Introduction "
+description: "Kronicle is an open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
+lead: "Kronicle is an open source platform for developer dashboards, a component catalog and interactive architecture diagrams."
 date: 2022-05-11T20:00:00+00:00
 lastmod: 2022-05-11T20:00:00+00:00
 draft: false
@@ -13,30 +13,35 @@ weight: 1
 url: "/docs/get-started/"
 ---
 
-## Live Demo
+## Get Started
 
-[https://demo.kronicle.tech](https://demo.kronicle.tech) is a real instance of Kronicle running on AWS ECS+Fargate and
-it is populated real data from the Kronicle Project.
-
-
-## Docker Compose
-
-Run Kronicle via Docker Compose.  The
-[https://github.com/kronicle-tech/kronicle-docker-compose](https://github.com/kronicle-tech/kronicle-docker-compose)
-repo contains a
-[docker-compose.yaml](https://github.com/kronicle-tech/kronicle-docker-compose/blob/main/docker-compose.yaml) file
-that can be used to run Docker locally.  The
-[README.md](https://github.com/kronicle-tech/kronicle-docker-compose/blob/main/README.md) contains more information.
+This page provides a few ways to get started with Kronicle.
 
 
-## Deploying to AWS using AWS CDK
+## Tutorial
 
-The [https://github.com/kronicle-tech/kronicle-cdk-config](https://github.com/kronicle-tech/kronicle-cdk-config) repo
-can be used to deploy Kronicle to an AWS account.  It deploys Kronicle to AWS ECS + AWS Fargate.  If you are familiar
-with AWS CDK, then this repo is an easy way to deploy Kronicle to AWS.
+The [Tutorial](/docs/tutorial/) provides step-by-step instructions for running Kronicle locally and then starting to
+configure it.
 
 
-## Kubernetes
+## Plugins
 
-The Kubernetes project provides Helm charts for deploying Kronicle to an existing Kubernetes cluster.  See
-[Deploying to Kubernetes](deploying-to-kubernetes) for more information.
+See [Plugins](/docs/plugins/) for info on the plugins that come pre-installed with Kronicle.
+
+
+## Deployment options
+
+See [Deployment Options](/docs/deployment/) for a few ways to deploy Kronicle, including running it locally via Docker Compose.
+
+
+## Live demo
+
+See [https://demo.kronicle.tech](https://demo.kronicle.tech) which is a real instance of Kronicle that contains real
+data.  Here are some interesting pages in the demo:
+
+1. Environment status page: https://demo.kronicle.tech/all-environments
+2. Kronicle's component catalog: https://demo.kronicle.tech/all-components
+3. Interactive architecture diagram: https://demo.kronicle.tech/all-components/dependencies
+4. Automated hosting and rendering of an OpenAPI spec: https://demo.kronicle.tech/components/kronicle-service/openapi-specs/1/content
+5. Automated hosting and rendering of a GraphQL schema: https://demo.kronicle.tech/components/kronicle-service/graphql-schemas/1/content
+6. Component info: https://demo.kronicle.tech/components/kronicle-service

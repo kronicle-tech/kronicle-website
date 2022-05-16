@@ -53,14 +53,14 @@
   url = "/docs/get-started/"
 
 [[main]]
-  name = "Plugins"
+  name = "Tutorial"
   weight = 2
-  url = "/docs/plugins/"
+  url = "/docs/tutorial/"
 
 [[main]]
-  name = "Docs"
+  name = "Plugins"
   weight = 3
-  url = "/docs/get-started/"
+  url = "/docs/plugins/"
 
 [[main]]
   name = "Blog"
