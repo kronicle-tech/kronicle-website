@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "configuration"
-weight: 720
+weight: 501
 url: "/docs/configuration/"
 ---
 
