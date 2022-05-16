@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "get-started"
-weight: 1
+weight: 101
 url: "/docs/get-started/"
 ---
 
