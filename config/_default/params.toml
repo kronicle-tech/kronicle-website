@@ -10,7 +10,7 @@ description = "Open source platform for developer dashboards, a component catalo
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["kronicle.png"]
 ogLocale = "en_US"
 domainTLD = "kronicle.tech"
 titleHome = "Kronicle"
@@ -28,10 +28,10 @@ schemaAuthorTwitter = "https://twitter.com/simondean"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/simon-dean-22382619/"
 schemaAuthorGitHub = "https://github.com/simondean"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "logo-kronicle.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "kronicle.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/kronicle_tech"
